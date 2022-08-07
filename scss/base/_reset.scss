@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: rem(15);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  background-color: $very-dark-blue;
+  color: $white;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
