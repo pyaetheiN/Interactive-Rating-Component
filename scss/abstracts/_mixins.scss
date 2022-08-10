@@ -1,0 +1,8 @@
+@use './breakpoints' as *;
+
+@mixin sm-max {
+  @media screen and (max-width: $screen-sm-max){
+    @content;
+  }
+}
+

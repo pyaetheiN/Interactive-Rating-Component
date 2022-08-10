@@ -15,6 +15,10 @@ body{
   display: grid;
   min-height: 100vh;
   place-items: center;
+
+  @include sm-max {
+    font-size: rem(14);
+  }
 }
 
 a{
