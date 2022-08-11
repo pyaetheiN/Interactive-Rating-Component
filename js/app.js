@@ -2,7 +2,7 @@ const card = document.querySelector('.card'),
       ratings = document.querySelectorAll('.card__rating'),
       form = document.querySelector('.card__form'),
       btn = document.querySelector('.card__btn'),
-      imgSrc = '/images/illustration-thank-you.svg';
+      imgSrc = '../images/illustration-thank-you.svg';
 
 function ratingsUi(){
   // click events
