@@ -62,19 +62,19 @@
 .card__btn {
   background-color: hsl(25deg, 97%, 53%);
   color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
   border: none;
   padding: 0.8rem 0 0.65rem;
   font-family: "Overpass", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
-  font-weight: 500;
   font-size: 0.975em;
   border-radius: 2rem;
   box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   cursor: pointer;
 }
-.card__btn:hover {
+.card__btn:not(.no-hover):hover {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
   font-weight: 700;

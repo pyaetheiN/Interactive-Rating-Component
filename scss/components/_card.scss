@@ -69,19 +69,26 @@
   &__btn{
     background-color: $orange;
     color: rgba($white, 0.8);
+    font-weight: 500;
     border: none;
     padding: 0.8rem 0 0.65rem;
     font-family: 'Overpass', sans-serif;
     text-transform: uppercase;
     letter-spacing: rem(2);
-    font-weight: 500;
     font-size: 0.975em;
     border-radius: 2rem;
     box-shadow: 0 0 rem(15) rgba(0,0,0,0.3);
     transition: 0.3s;
     cursor: pointer;
 
-    &:hover{
+    // &:hover{
+    //   background-color: $white;
+    //   color: $orange;
+    //   font-weight: 700;
+    // }
+
+    // only apply hover styling when the button does not have the class 'no-hover'
+    &:not(.no-hover):hover{ 
       background-color: $white;
       color: $orange;
       font-weight: 700;
