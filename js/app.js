@@ -1,7 +1,8 @@
 const card = document.querySelector('.card'),
       ratings = document.querySelectorAll('.card__rating'),
       form = document.querySelector('.card__form'),
-      btn = document.querySelector('.card__btn');
+      btn = document.querySelector('.card__btn'),
+      imgSrc = '/images/illustration-thank-you.svg';
 
 function ratingsUi(){
   // click events
@@ -53,7 +54,7 @@ function thankYou(e){
       const selectedRating = JSON.parse(localStorage.getItem('selectedRating'));
       card.style.textAlign = 'center';
       card.innerHTML = `
-      <img src="../images/illustration-thank-you.svg" alt="thank-you" class="card__thankyou--img">
+      <img src=${imgSrc} alt="thank-you" class="card__thankyou--img">
       <div class="card__selected--container">
         <p class="card__selected">You selected ${selectedRating} out of 5</p>
       </div>
