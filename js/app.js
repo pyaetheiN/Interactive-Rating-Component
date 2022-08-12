@@ -51,9 +51,11 @@ function thankYou(e){
   for(i = 0; i < ratings.length; i++){
     if(ratings[i].classList.contains('clicked')){
       const selectedRating = JSON.parse(localStorage.getItem('selectedRating'));
+      const thankYouImg = document.querySelector('.card__thankyou--img');
+      thankYouImg.src = '/images/illustration-thank-you.svg'
       card.style.textAlign = 'center';
       card.innerHTML = `
-        <img src="../../images/illustration-thank-you.svg" alt="thank-you" class="card__thankyou--img">
+        <img alt="thank-you" class="card__thankyou--img">
         <div class="card__selected--container">
           <p class="card__selected">You selected ${selectedRating} out of 5</p>
         </div>
