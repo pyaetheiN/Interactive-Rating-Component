@@ -51,8 +51,6 @@ function thankYou(e){
   for(i = 0; i < ratings.length; i++){
     if(ratings[i].classList.contains('clicked')){
       const selectedRating = JSON.parse(localStorage.getItem('selectedRating'));
-      const thankYouImg = document.querySelector('.card__thankyou--img');
-      thankYouImg.src = '/images/illustration-thank-you.svg'
       card.style.textAlign = 'center';
       card.innerHTML = `
         <img alt="thank-you" class="card__thankyou--img">
@@ -63,7 +61,12 @@ function thankYou(e){
         <p class="card__desc">
           We appreciate you taking the time to give a rating. If you ever need more support, 
           don’t hesitate to get in touch!
-        </p> `;
+        </p> `
+      ;
+      
+      const thankYouImg = document.querySelector('.card__thankyou--img');
+      thankYouImg.src = '/images/illustration-thank-you.svg'
+
     } else{
       e.preventDefault();
     }
