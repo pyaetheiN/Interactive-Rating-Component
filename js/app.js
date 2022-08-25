@@ -65,9 +65,10 @@ function thankYou(e){
       ;
       
       const thankYouImg = document.querySelector('.card__thankyou--img');
-      thankYouImg.src = '/images/illustration-thank-you.svg'
-
-    } else{
+      thankYouImg.src = '../images/illustration-thank-you.svg';
+    } 
+    
+    else{
       e.preventDefault();
     }
   }
