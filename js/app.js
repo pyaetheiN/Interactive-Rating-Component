@@ -53,7 +53,7 @@ function thankYou(e){
       const selectedRating = JSON.parse(localStorage.getItem('selectedRating'));
       card.style.textAlign = 'center';
       card.innerHTML = `
-        <img alt="thank-you" class="card__thankyou--img">
+        <img src="" alt="thank-you" class="card__thankyou--img">
         <div class="card__selected--container">
           <p class="card__selected">You selected ${selectedRating} out of 5</p>
         </div>
@@ -67,7 +67,7 @@ function thankYou(e){
       const thankYouImg = document.querySelector('.card__thankyou--img');
       thankYouImg.src = '../images/illustration-thank-you.svg';
     } 
-    
+
     else{
       e.preventDefault();
     }
@@ -99,7 +99,7 @@ btn.addEventListener('click', function() {
     if(ratings[i].classList.contains('clicked')){
       return;
     } else{
-      btn.classList.toggle('no-hover');
+      btn.classList.add('no-hover');
     }
   }
 })
