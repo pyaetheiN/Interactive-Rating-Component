@@ -64,7 +64,7 @@ btn.addEventListener('click', function() {
     if(ratings[i].classList.contains('clicked')){
       return;
     } else{
-      btn.classList.toggle('no-hover');
+      btn.classList.add('no-hover');
     }
   }
 })
