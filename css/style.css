@@ -74,10 +74,12 @@
   transition: 0.3s;
   cursor: pointer;
 }
-.card__btn:not(.no-hover):hover {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(25deg, 97%, 53%);
-  font-weight: 700;
+@media screen and (min-width: 60.5rem) {
+  .card__btn:hover {
+    background-color: hsl(0deg, 0%, 100%);
+    color: hsl(25deg, 97%, 53%);
+    font-weight: 700;
+  }
 }
 .card__thankyou--img {
   max-width: 12.5rem;
@@ -97,9 +99,11 @@
   border-radius: 1rem;
 }
 
-.grey-hover {
-  background-color: hsl(217deg, 12%, 63%);
-  color: hsl(0deg, 0%, 100%);
+@media screen and (min-width: 60.5rem) {
+  .grey-hover {
+    background-color: hsl(217deg, 12%, 63%);
+    color: hsl(0deg, 0%, 100%);
+  }
 }
 
 .clicked {
@@ -135,4 +139,12 @@ a {
 
 ul {
   list-style: none;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 18.75rem;
 }/*# sourceMappingURL=style.css.map */

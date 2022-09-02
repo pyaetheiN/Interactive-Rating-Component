@@ -10,9 +10,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -46,40 +44,12 @@ Users should be able to:
 - Mobile-first workflow
 - Vanilla JS
 
-### What I learned
-
-Only applying hover styling when the button does not have the class 'no-hover' 
-- to fix hover effect on disabled button for mobile and tablets
-
-```css
-.card__btn:not(.no-hover):hover {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(25deg, 97%, 53%);
-  font-weight: 700;
-}
-```
-```js
-btn.addEventListener('click', function() {
-  for(i = 0; i < ratings.length; i++){
-    if(ratings[i].classList.contains('clicked')){
-      return;
-    } else{
-      btn.classList.add('no-hover');
-    }
-  }
-})
-```
-
 ### Continued development
 
 Getting comfortable with the basics of JS;
 - saving items to `localStorage` and reusing them    
 - js array methods such as `shift()` & `push()`
 - `nextElementSibling` & `previousElementSibling`
-
-### Useful resources
-
-- https://stackoverflow.com/questions/30118246/disable-hover-on-click
 
 ## Author
 

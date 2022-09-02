@@ -181,14 +181,3 @@ function saveSelection(rating){
 ratingsUi();
 
 form.addEventListener('submit', thankYou);
-
-// for mobile hover effects
-btn.addEventListener('click', function() {
-  for(i = 0; i < ratings.length; i++){
-    if(ratings[i].classList.contains('clicked')){
-      return;
-    } else{
-      btn.classList.add('no-hover');
-    }
-  }
-})
